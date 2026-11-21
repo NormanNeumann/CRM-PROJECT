@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CRM PROJECT · 销售工作台</title>
+<link rel="stylesheet" href="assets/styles.css"></head><body>
+<aside><div class="logo"><i class="mark" aria-hidden="true"></i><span>CRM PROJECT</span></div><div class="section">工作区导航</div><nav aria-label="销售管理"><button class="nav" data-page="leads"><span aria-hidden="true">◎</span>线索管理</button><button class="nav" data-page="customers"><span aria-hidden="true">◇</span>客户管理</button><button class="nav" data-page="orders"><span aria-hidden="true">▤</span>订单管理</button></nav><div class="foot">本地工作区<br>课堂演示数据</div></aside>
+<main><div class="crumb">销售工作台　/　<span id="crumb"></span></div><div class="head"><div><h1 id="heading"></h1><p class="summary" id="subtitle"></p></div><button class="btn primary" id="add"></button></div>
+<section class="stats" id="stats" aria-label="模块总览"></section>
+<section class="panel filters"><header><h2>筛选条件</h2><button class="link" id="clear">重置筛选</button></header><div id="filters" class="fields"></div></section>
+<section class="panel"><div class="tablehead"><h2 id="listtitle"></h2><span class="count" id="count" aria-live="polite"></span></div><div class="scroll"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div></section><p class="storage" id="storage"></p></main>
+<dialog id="dialog" aria-labelledby="dialogtitle"><header><h2 id="dialogtitle"></h2><button class="btn" id="close" aria-label="关闭">关闭</button></header><form id="form" novalidate></form></dialog><div id="toast" class="toast" role="status"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script></body></html>
